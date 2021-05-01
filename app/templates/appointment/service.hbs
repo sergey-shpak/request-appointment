@@ -1,0 +1,13 @@
+<h5>Select Service</h5>
+
+{{#each this.model as |service|}}
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{service.description}}</h5>
+    <p class="card-text">{{service.duration}}min</p>
+
+    <BsButton @type="primary" class="btn btn-primary" 
+        {{on "click" (fn this.next service) }}>Select</BsButton>
+  </div>
+</div>
+{{/each}}

@@ -1,0 +1,11 @@
+<h5>Confirm appointment</h5>
+<div class="mt-3">Your service is 
+  <b>{{this.model.cptCode.duration}}min 
+    {{this.model.cptCode.description}}</b>
+</div>
+<div>At <b>{{this.model.office.name}},
+  tel: {{this.model.office.phone}}</b></div>
+<div class="mt-3">
+  <BsButton @type="primary" class="btn btn-primary" 
+    {{on "click" (fn this.next) }}>Confirm!</BsButton>
+</div>

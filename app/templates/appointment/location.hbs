@@ -1,0 +1,13 @@
+<h5>Select Location</h5>
+
+{{#each this.model as |location|}}
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{location.name}}</h5>
+    <p class="card-text">{{location.phone}}min</p>
+
+    <BsButton @type="primary" class="btn btn-primary" 
+        {{on "click" (fn this.next location) }}>Select</BsButton>
+  </div>
+</div>
+{{/each}}

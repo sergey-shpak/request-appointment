@@ -1,56 +1,18 @@
-# request-appointment
+### About the task
+Imo, there are two major implementations:
+1. Component based pattern, where service which "controls steps proccess" is injected into components.
+2. Tradional pattern with shared step route, model, etc.
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This repository shows implementation of the second pattern.
 
-## Prerequisites
+Generally talking, it took more time to re-read/refresh all Ember.js concepts and set up the environment (configure ember-cli proxy, especially 'transparentProxy' param ;) than to implement the task itself.
 
-You will need the following things properly installed on your computer.
+### To run the task
+As usual follow common steps:
+```
+npm install
+npm run start
+```
+and visit http://localhost:4200/
 
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with npm)
-* [Ember CLI](https://ember-cli.com/)
-* [Google Chrome](https://google.com/chrome/)
-
-## Installation
-
-* `git clone <repository-url>` this repository
-* `cd request-appointment`
-* `npm install`
-
-## Running / Development
-
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Linting
-
-* `npm run lint`
-* `npm run lint:fix`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+![Application gif](/application.gif?raw=true)

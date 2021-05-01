@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="col">
+    <div>
+      {{#if this.model.cptCode}}
+        <div>
+          <LinkTo @route='appointment.service'>1. Select Service</LinkTo>
+        </div>
+        <div><b>
+          {{this.model.cptCode.description}}, 
+          {{this.model.cptCode.duration}}min
+        </b></div>
+      {{else}}
+        <span>1. Select Service</span>
+      {{/if}}
+    </div>
+    <div>
+      {{#if this.model.office}}
+        <div>
+          <LinkTo @route='appointment.location'>2. Select Location</LinkTo>
+        </div>
+        <div><b>
+          {{this.model.office.name}}, 
+          {{this.model.office.phone}}
+        </b></div>
+      {{else }}
+        <span>2. Select Location</span>
+      {{/if}}
+    </div>
+  </div>
+  <div class="col-9">
+    {{outlet}}
+  </div>
+</div>
